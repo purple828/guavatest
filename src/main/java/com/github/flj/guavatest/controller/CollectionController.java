@@ -20,6 +20,7 @@ import org.springframework.stereotype.Controller;
 public class CollectionController {
 
     public void test(){
+
         System.out.println("hello guava!");
     }
 }
