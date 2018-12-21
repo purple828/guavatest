@@ -1,7 +1,10 @@
-package com.github.flj.guavatest.dao;
+package com.github.flj.guavatest.mapper;
 
 import com.github.flj.guavatest.entity.Person;
+import org.springframework.stereotype.Repository;
 
+//@Service
+@Repository
 public interface PersonMapper {
     int deleteByPrimaryKey(Integer id);
 

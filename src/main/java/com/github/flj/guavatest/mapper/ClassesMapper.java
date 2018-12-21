@@ -1,7 +1,9 @@
-package com.github.flj.guavatest.dao;
+package com.github.flj.guavatest.mapper;
 
 import com.github.flj.guavatest.entity.Classes;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface ClassesMapper {
     int deleteByPrimaryKey(Integer id);
 

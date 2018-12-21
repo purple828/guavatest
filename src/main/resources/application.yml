@@ -9,12 +9,12 @@ spring:
 
 #mybatis
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:com.github.flj.guavatest.mapper/*.xml
   type-aliases-package: com.github.flj.guavatest.entity
 
 # 通用mapper 配置 自动生成dao层代码
 mapper:
-  plugin: tk.mybatis.mapper.generator.MapperPlugin
-  Mapper: tk.mybatis.mapper.common.Mapper
+  plugin: tk.mybatis.com.github.flj.guavatest.mapper.generator.MapperPlugin
+  Mapper: tk.mybatis.com.github.flj.guavatest.mapper.common.Mapper
   not-empty: false
   identity: MYSQL

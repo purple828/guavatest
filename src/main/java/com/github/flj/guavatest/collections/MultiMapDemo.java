@@ -9,7 +9,9 @@ import com.google.common.collect.Multimap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -72,7 +74,31 @@ public class MultiMapDemo {
 
         }
 
+        HashMultimap hashMultimap = HashMultimap.create();
+        hashMultimap.put(1,2);
+        hashMultimap.put(2,2);
+        hashMultimap.put(1,1);
+        hashMultimap.put(2,1);
 
+        hashMultimap.removeAll(1);
+
+//        Iterator iterator = hashMultimap.entries().iterator();
+//        while (iterator.hasNext()){
+//            Map.Entry<Integer, Integer> next = (Map.Entry<Integer, Integer>)iterator.next();
+//            logger.info("hashMultimap key = {},value={}",next.getKey(),next.getValue());
+//            if( next.getKey() == 1){
+//                iterator.remove();
+//            }
+//        }
+        logger.info("hashMultimap.size===={}",hashMultimap.size());
+
+//        hashMultimap.remove(2,1);
+
+        for(Object integer:hashMultimap.values()){
+            logger.info("hashMultimap value ====== {}",integer);
+        }
+
+        hashMultimap.asMap();
 
 
     }
