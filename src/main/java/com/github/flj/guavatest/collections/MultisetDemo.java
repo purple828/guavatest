@@ -3,7 +3,6 @@ package com.github.flj.guavatest.collections;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multiset;
-import com.google.common.collect.Multiset.Entry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,6 +32,7 @@ public class MultisetDemo {
 
     private static Logger logger = LoggerFactory.getLogger(MultisetDemo.class);
 
+
     public static void main(String[] args){
 
         List<String> wordList = Lists.newArrayList("one","two","three","one","three","one");
@@ -43,12 +43,6 @@ public class MultisetDemo {
         logger.info("oneCount = {},threeCount={}",multiset.count("one"),multiset.count("three"));
         //Multiset中不重复元素的集合，类型为Set<E>
         logger.info("multiset.elementSet()={}",multiset.elementSet());
-
-
-
-
-
-
 
     }
 
