@@ -1,9 +1,7 @@
 package com.github.flj.guavatest.data;
 
 import com.github.flj.guavatest.entity.Person;
-import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Multimap;
 
 import java.util.List;
 
